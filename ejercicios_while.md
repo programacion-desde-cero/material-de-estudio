@@ -1,4 +1,4 @@
-Ejercicios para practicar la estructura de control de bucle o repetición condicional (while) usando Python.
+# Ejercicios para practicar la estructura de control de bucle o repetición condicional (while) usando Python.
 
 En los siguientes videos podrás ver una explicación de la estructura y también la resolución paso a paso de estos ejercicios:
 + [Repetición condicional: while](https://youtu.be/Rkv3GtEZEnw)
