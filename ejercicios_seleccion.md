@@ -1,4 +1,4 @@
-Ejercicios para practicar la estructura de control de decisión o selección (if-else-elif) usando Python.
+# Ejercicios para practicar la estructura de control de decisión o selección (if-else-elif) usando Python.
 
 En los siguientes videos podrás ver una explicación de la estructura de selección y también la resolución paso a paso de estos ejercicios:
 + [Selección o decisión: if, if-else, if-elif-else](https://www.youtube.com/watch?v=kIkAhld32O8)
