@@ -28,21 +28,21 @@ def sumatoria(lista):
     for n in lista:
         suma+=n
     return suma
-<br>&nbsp;
+
 def numerosMenores(lista, limite):
     nueva=[]
     for n in lista:
         if n<limite:
             nueva.append(n)
     return nueva
-<br>&nbsp;
+
 def frecuencias(lista):
     nueva=[]
     for n in lista:
         if [n, lista.count(n)] not in nueva:
             nueva.append([n, lista.count(n)])
     return nueva
-<br>&nbsp;
+
 #A
 numeros=[]
 nro=int(input("Número: "))
@@ -93,7 +93,7 @@ def agregarPasajeros(pasajeros):
         pasajeros.append((nombre,dni,destino))
         nombre=input("Nombre -x para cortar: ")
     return pasajeros
-<br>&nbsp;
+
 def agregarCiudades(ciudades):
     ciudad=input("Ciudad -x para cortar: ")
     while ciudad!="x":
@@ -101,34 +101,34 @@ def agregarCiudades(ciudades):
         ciudades.append((ciudad,pais))
         ciudad=input("Ciudad -x para cortar: ")
     return ciudades
-<br>&nbsp;
+
 def buscarCiudad(pasajeros, dni):
     for viaje in pasajeros:
         if viaje[1]==dni:
             return viaje[2]
     return ""
-<br>&nbsp;
+
 def cantidadPasajerosCiudad(pasajeros, ciudad):
     cantidad=0
     for viaje in pasajeros:
         if viaje[2]==ciudad:
             cantidad+=1
     return cantidad
-<br>&nbsp;
+
 def buscarPaisDestino(pasajeros, ciudades, dni):
     buscada=buscarCiudad(pasajeros, dni)
     for ciudad in ciudades:
         if ciudad[0]==buscada:
             return ciudad[1]
     return ""
-<br>&nbsp;
+
 def cantidadPasajerosPais(pasajeros, ciudades, pais):
     cantidad=0
     for viaje in pasajeros:
         if pais==buscarPaisDestino(pasajeros, ciudades, viaje[1]):
             cantidad+=1
     return cantidad
-<br>&nbsp;
+
 #programa principal
 pasajeros=[]
 ciudades=[]
@@ -184,22 +184,22 @@ def cargarNombres(alumnos):
        alumnos.add(nombre)
        nombre=input("Nombre: ")
    return alumnos
-<br>&nbsp;
+
 primaria=set()
 secundaria=set()
 print("ALUMNOS DE PRIMARIA")
 primaria=cargarNombres(primaria)
 print("ALUMNOS DE SECUNDARIA")
 secundaria=cargarNombres(secundaria)
-<br>&nbsp;
+
 print("NOMBRES DE TODOS LOS ALUMNOS:")
 for nombre in primaria|secundaria:
    print(nombre)
-<br>&nbsp;
+
 print("NOMBRES COMUNES:")
 for nombre in primaria&secundaria:
    print(nombre)
-<br>&nbsp;
+
 print("NOMBRES DE PRIMARIA QUE NO SE REPITEN EN SECUNDARIA:")
 for nombre in primaria-secundaria:
    print(nombre)
@@ -288,52 +288,52 @@ def cargarSocios(socios):
        socios[numero]=[nombre,fecha,cuota.lower()=="s"]
        numero=int(input("Número de socio (0 para cortar): "))
    return socios
-<br>&nbsp;
+
 def modificarFecha(socios, fecha_anterior, fecha_nueva):
    for datos in socios.values():
        if datos[1]==fecha_anterior:
            datos[1]=fecha_nueva
    return socios
-<br>&nbsp;
+
 def numeroSocio(socios, nombre):
    for numero,datos in socios.items():
        if datos[0].lower()==nombre.lower():
            return numero
    return 0
-<br>&nbsp;
+
 def formatoFecha(fecha):
    return fecha[:2]+"/"+fecha[2:4]+"/"+fecha[4:]
-<br>&nbsp;
+
 def imprimirListado(socios):
    for numero,datos in socios.items():
        print("-Número:",numero)
- print("-Nombre:",datos[0])
+       print("-Nombre:",datos[0])
        print("-Ingresó:", formatoFecha(datos[1]))
        if datos[2]:
            print("-Cuota al día")
        else:
            print("-En deuda")
-<br>&nbsp;
+
 socios_activos={1:["Amanda Núñez","17032009",True], 2:["Bárbara Molina","17032009",True], 3:["Lautaro Campos","17032009",True]}
-<br>&nbsp;
+
 print("***Cargar socios")
 socios_activos=cargarSocios(socios_activos)
-<br>&nbsp;
+
 print("El club tiene", len(socios_activos), "socios")
-<br>&nbsp;
+
 print("***Registrar pago de cuotas")
 numero=int(input("Número de socio: "))
 socios_activos[numero][2]=True
-<br>&nbsp;
+
 print("***Modificando fecha de ingreso...")
 socios_activos=modificarFecha(socios_activos, "13032018", "14032018")
-<br>&nbsp;
+
 print("***Eliminar socio")
 nombre=input("Nombre y apellido: ")
 numero=numeroSocio(socios_activos, nombre)
 if numero in socios_activos:
     del socios_activos[numero]
-<br>&nbsp;
+
 imprimirListado(socios_activos)
 ```
 
