@@ -27,7 +27,8 @@ def validar(email):
         if c==caracterBuscado:
             return True
     return False
-<br>&nbsp;
+
+#programa principal
 direccion=input("Tu email: ")
 if validar(direccion):
     print("Dirección válida")
@@ -51,7 +52,8 @@ def sumaDigitos(numero):
         suma=suma+digito
         numero=numero//10
     return suma
-<br>&nbsp;
+
+#programa principal
 num=int(input("Número a procesar: "))
 while num!=0:
     print("Suma:",sumaDigitos(num))
@@ -76,7 +78,8 @@ def sumaDigitos(numero):
         suma=suma+digito
         numero=numero//10
     return suma
-<br>&nbsp;
+
+#programa principal
 sumatoria=0
 num=int(input("Número a procesar: "))
 while num!=0:
@@ -101,7 +104,8 @@ def primo(num):
        if num%i==0:           
            return False
    return True
-<br>&nbsp;
+
+#programa principal
 numero=int(input("Número: "))
 if primo(numero):
     print("Es primo")
@@ -126,7 +130,8 @@ def frecuencia(numero,digito):
            cantidad+=1
        numero=numero//10
    return cantidad
-<br>&nbsp;
+
+#programa principal
 num=int(input("Número: "))
 un_digito=int(input("Dígito: "))
 print("Frecuencia del dígito en el número:",frecuencia(num,un_digito))
@@ -147,7 +152,8 @@ def factorial(numero):
        for i in range(1,numero+1):
            f=f*i
    return f
-<br>&nbsp;
+
+#programa principal
 cantidad=0
 num=int(input("Número (-1 para cortar): "))
 while num!=-1:
@@ -173,7 +179,8 @@ def sumaDigitos(numero):
       suma=suma+digito
       numero=numero//10
   return suma
-<br>&nbsp;
+
+#programa principal
 cantidad=0
 mayor=-1
 numero=int(input("Número positivo: "))
@@ -203,7 +210,7 @@ def primo(num):
        if num%i==0:           
            return False
    return True
-<br>&nbsp;
+
 def frecuencia(numero,digito):
    cantidad=0
    while numero!=0:
@@ -212,14 +219,14 @@ def frecuencia(numero,digito):
            cantidad+=1
        numero=numero//10
    return cantidad
-<br>&nbsp;
+
 def factorial(numero):
    f=1
    if numero!=0:
        for i in range(1,numero+1):
            f=f*i
    return f
-<br>&nbsp;
+
 def sumaDigitos(numero):
   suma=0
   while numero!=0:
@@ -227,7 +234,8 @@ def sumaDigitos(numero):
       suma=suma+digito
       numero=numero//10
   return suma
-<br>&nbsp;
+
+#programa principal
 mayor=0
 numero=int(input("Número primo: "))
 while primo(numero):
@@ -252,7 +260,7 @@ def coordenadaZ(x,y):
   x=x+10
   y=y+15
   return x+y
-<br>&nbsp;
+
 #programa principal
 x=int(input("Coordenada eje x: "))
 y=int(input("Coordenada eje y: "))
@@ -278,13 +286,13 @@ def maximo(a,b):
     return x
   else:
     return y
-<br>&nbsp;
+
 def minimo(a,b):
   if x<y:
     return x
   else:
     return y
-<br>&nbsp;
+
 #programa principal
 x=int(input("Un número: "))
 y=int(input("Otro número: "))
@@ -364,26 +372,26 @@ def lenUltimaPalabra(cadena):
            if cadena[i]==' ' and i<(longitud-1) and cadena[i+1]!=' ':
                cantidad=0
    return cantidad
-<br>&nbsp;
+
 def DNIvalido(dni):
    cantidad=0
    while dni!=0:
        cantidad+=1
        dni//=10
    return cantidad==7 or cantidad==8
-<br>&nbsp;
+
 def primerosTresDigitos(numero):
    while numero >= 1000:
      numero = numero // 10
    return numero
-<br>&nbsp;
+
 def obtenerIdentificador(nombre, dni):
    nombre=nombre.strip()
    id=nombre[:nombre.find(" ")]
    id=id+str(lenUltimaPalabra(nombre))
    id=id+str(primerosTresDigitos(dni))
    return id
-<br>&nbsp;
+
 #programa principal
 nombre=input("Nombre del socio: ")
 while nombre!="":
