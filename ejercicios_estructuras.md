@@ -244,8 +244,9 @@ for i in range(50):
 print("Frecuencia de cada carácter")
 for caracter, cantidad in contadores.items():
    print(caracter, ": ", cantidad)</code></pre>
-<br>Para contabilizar sólo letras (mayúsculas y minúsculas por separado):
-<pre><code>contadores={}
+
+#Para contabilizar sólo letras (mayúsculas y minúsculas por separado):
+contadores={}
 alfabeto="abcdefghijklmnñopqrstuvwxyz"
 for letra in alfabeto+alfabeto.upper():
     contadores[letra]=0
