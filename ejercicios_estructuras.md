@@ -5,7 +5,7 @@ En los siguientes videos podrás ver una explicación del tema y también la res
 + [Ejercicios de listas y tuplas](https://youtu.be/0NTaCJQUE1I)
 + [Ejercicio integrador de listas y tuplas](https://www.youtube.com/watch?v=8fKMHKvDieU)
 + [Conjuntos](https://www.youtube.com/watch?v=ZP-6dkGxizE)
-+ [Ejercicios de conjuntos](https://www.youtube.com/watch?v=ZP-6dkGxizE)
++ [Ejercicios de conjuntos](https://youtu.be/Zo6TzXy7cxM)
 + [Diccionarios](https://www.youtube.com/watch?v=ymaBXPjiaPY)
 + [Ejercicios de diccionarios](https://www.youtube.com/watch?v=uOpW1tKKO8M)
 + [Ejercicio integrador de diccionarios](https://www.youtube.com/watch?v=m4out51i0y4)
