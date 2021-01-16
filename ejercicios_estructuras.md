@@ -1,4 +1,4 @@
-# Ejercicios para practicar programar usando estructuras de datos, usando Python.
+# Ejercicios para practicar programación usando estructuras de datos, con Python.
 
 En los siguientes videos podrás ver una explicación del tema y también la resolución paso a paso de estos ejercicios:
 + [Listas y tuplas](https://www.youtube.com/watch?v=TEHBEGj1MSU)
